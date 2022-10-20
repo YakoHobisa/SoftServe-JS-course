@@ -64,8 +64,8 @@
     // console.log(yearOfBirth, isMarried, myName, myLastName, studyGroupName);
 
     // let musicTaste = null;
-    // let willToLive;
-    // console.log(typeof musicTaste, willToLive);
+    // let hoursOfSleep;
+    // console.log(typeof musicTaste, hoursOfSleep);
 
 // 7. За допомогою функції prompt() напишіть скріпт, який послідовно запитує в користувача логін, емейл та пароль, і виводить на екран повідомлення із введеними даними.
     // Наприклад “Dear User, your email is usermale@gmail.com, your password is qwerty”.
