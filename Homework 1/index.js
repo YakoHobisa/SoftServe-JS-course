@@ -79,34 +79,34 @@
 
 /* 8. Напишіть скріпт, який вираховує кількість секунд в годині, в добі, в місяці, записує результати в відповідні змінні, і виводить їх значення на екран. */
 
-const secsInAnHour = 3600;
-const secsInADay = 86400;
-const secsInAMonth = 30.436875 * secsInADay; //In the Gregorian calendar, an average month has exactly 30.436875 days.
+// const secsInAnHour = 3600;
+// const secsInADay = 86400;
+// const secsInAMonth = 30.436875 * secsInADay; //In the Gregorian calendar, an average month has exactly 30.436875 days.
 
-let hours;
-let days;
-let months;
-let result;
-let converter = prompt("What do you want to convert to seconds? \n 1. Hours \n 2. Days \n 3. Months \n Enter a number:");
+// let hours;
+// let days;
+// let months;
+// let result;
+// let converter = prompt("What do you want to convert to seconds? \n 1. Hours \n 2. Days \n 3. Months \n Enter a number:");
 
-if (converter == 1){
-    hours = prompt("Enter a number of hours:")
-    if (hours >= 0){
-        result = hours * secsInAnHour;
-        alert(`There is ${result} seconds in ${hours} hour(s)`);
-    } else {alert("Enter a valid number of hours")}
-} else if (converter == 2){
-    days = prompt("Enter a number of days:");
-        if (days >= 0){
-    result = days * secsInADay;
-    alert(`There is ${result} seconds in ${days} day(s)`);
-        } else {alert("Enter a valid number of hours")}
-} else if (converter == 3){
-    months = prompt("Enter a number of months:");
-        if (months >= 0){
-    result = months * secsInAMonth;
-    alert(`There is ${result} seconds in ${months} month(s)`);
-        } else {alert("Enter a valid number of hours")}
-} else if (converter != 1 || 2 || 3){
-    alert("Enter a valid number: 1, 2 or 3")
-} 
+// if (converter == 1){
+//     hours = prompt("Enter a number of hours:")
+//     if (hours >= 0){
+//         result = hours * secsInAnHour;
+//         alert(`There is ${result} seconds in ${hours} hour(s)`);
+//     } else {alert("Enter a valid number of hours")}
+// } else if (converter == 2){
+//     days = prompt("Enter a number of days:");
+//         if (days >= 0){
+//     result = days * secsInADay;
+//     alert(`There is ${result} seconds in ${days} day(s)`);
+//         } else {alert("Enter a valid number of hours")}
+// } else if (converter == 3){
+//     months = prompt("Enter a number of months:");
+//         if (months >= 0){
+//     result = months * secsInAMonth;
+//     alert(`There is ${result} seconds in ${months} month(s)`);
+//         } else {alert("Enter a valid number of hours")}
+// } else if (converter != 1 || 2 || 3){
+//     alert("Enter a valid number: 1, 2 or 3")
+// } 
