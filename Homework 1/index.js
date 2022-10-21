@@ -107,6 +107,8 @@
 //     result = months * secsInAMonth;
 //     alert(`There is ${result} seconds in ${months} month(s)`);
 //         } else {alert("Enter a valid number of hours")}
+// } else if (converter == null) {
+//     console.log("canceled")
 // } else if (converter != 1 || 2 || 3){
 //     alert("Enter a valid number: 1, 2 or 3")
-// } 
+// };
