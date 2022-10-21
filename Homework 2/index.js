@@ -32,7 +32,7 @@
     // let mult = num % 7;
 
     // if (num % 2 == 0 && num > 0) {
-    //     console.log(num + " is even")
+    //     console.log(num + " is even and positive");
     // } else if (num % 7 == 0) {
     //     console.log(num + " multiples of 7");
     // } else {
@@ -74,7 +74,7 @@
     // sirena[4] = any;
     // alert(sirena[4]);
 
-    // delete sirena[0];
+    // sirena.shift();
     // alert(sirena);
 
 /* 4. Напишіть програму, яка об’єднує всі наявні елементи масиву в стрічку і розділяє їх символом “*”.
