@@ -84,7 +84,17 @@ let cities = ["Rome", "Lviv", "Warsaw"];
 "Rome*Lviv*Warsaw" */
 
     // let cities = ["Rome", "Lviv", "Warsaw"];
+
     // let citiesList = cities[0] + "*" + cities[1] + "*" + cities[2];
+    // alert(citiesList);
+
+    /* OR */
+
+    // let citiesList = "";
+    // for (let i = 0; i <= cities.length - 1; i++) {
+    //     citiesList += cities[i] + "*";
+    // }
+    // citiesList = citiesList.slice(0, -1);
     // alert(citiesList);
 
 /* 5. Використовуючи функцію prompt() задайте користувачу питання про досягнення ним повнолітнього віку.
