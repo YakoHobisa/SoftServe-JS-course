@@ -119,35 +119,35 @@ let cities = ["Rome", "Lviv", "Warsaw"];
 Здійснювати перевірку чи введені користувачем значення коректні, в іншому випадку вивести 'Incorrect data‘.
 Результат обчислення площі трикутника виводити в консоль з точністю 3 знаки після коми (наприклад:  8.42355465 =>  8.424).  */
 
-    function triangleAreaByThreeSides() {
-        let a = Number(window.prompt("Enter first side of the triangle"));
-            if (!a) {
-                console.log("Canceled or incorrect data")
-                return;
-            }
-        let b = Number(window.prompt("Enter second side of the triangle"));
-            if (!b) {
-                console.log("Canceled or incorrect data")
-                return;
-            }
-        let c = Number(window.prompt("Enter third side of the triangle"));
-            if (!c) {
-                console.log("Canceled or incorrect data")
-                return;
-            }
+    // function triangleAreaByThreeSides() {
+    //     let a = Number(window.prompt("Enter first side of the triangle"));
+    //         if (!a) {
+    //             console.log("Canceled or incorrect data")
+    //             return;
+    //         }
+    //     let b = Number(window.prompt("Enter second side of the triangle"));
+    //         if (!b) {
+    //             console.log("Canceled or incorrect data")
+    //             return;
+    //         }
+    //     let c = Number(window.prompt("Enter third side of the triangle"));
+    //         if (!c) {
+    //             console.log("Canceled or incorrect data")
+    //             return;
+    //         }
       
-        let p = (a + b + c) / 2;
+    //     let p = (a + b + c) / 2;
       
-        if (p <= a || p <= b || p <= c) {
-          console.log(a, b, c);
-          console.log('Incorrect data');
-          return;
-        }
+    //     if (p <= a || p <= b || p <= c) {
+    //       console.log(a, b, c);
+    //       console.log('Incorrect data');
+    //       return;
+    //     }
 
-        let area = Math.sqrt(p * (p - a) * (p - b) * (p - c)).toFixed(3);
-        console.log('Triangle area: ' + area);
-    };
-    triangleAreaByThreeSides();
+    //     let area = Math.sqrt(p * (p - a) * (p - b) * (p - c)).toFixed(3);
+    //     console.log('Triangle area: ' + area);
+    // };
+    // triangleAreaByThreeSides();
 
 /*7. Написати умовну конструкцію, яка в залежності від часу доби виводитиме відповідне привітання.
 Потрібно отримати реальний час доби із системи.
