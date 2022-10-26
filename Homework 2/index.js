@@ -103,13 +103,14 @@ let cities = ["Rome", "Lviv", "Warsaw"];
 Наприклад: при виконанні умови вік більше 18 вивести “Ви досягли повнолітнього віку”.
 Якщо вік менше 18 років вивести “Ви ще надто молоді”, */
 
-    // let age = prompt("Are you 18+ years old? \n Type: 'Yes' or 'No'" ).toLowerCase();
-    // if (age == "yes") {
+    // let isAdult = Number(window.prompt("How old are you?"));
+
+    // if (isAdult >= 18) {
     //     alert("You have reached the age of majority")
-    // } else if (age == "no") {
+    // } else if (isAdult < 18 && isAdult > 0) {
     //     alert("You are too young yet")
     // } else {
-    //     alert("Try again");
+    //     alert("Enter a positive number")
     // }
 
 /* 6. Користувач вводить три довжини сторін трикутника (використовуйте prompt () три рази для введення кожної сторони).
