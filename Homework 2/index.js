@@ -120,22 +120,19 @@ let cities = ["Rome", "Lviv", "Warsaw"];
 Здійснювати перевірку чи введені користувачем значення коректні, в іншому випадку вивести 'Incorrect data‘.
 Результат обчислення площі трикутника виводити в консоль з точністю 3 знаки після коми (наприклад:  8.42355465 =>  8.424).  */
 
-    // function triangleAreaByThreeSides() {
-    //     let a = Number(window.prompt("Enter first side of the triangle"));
+    //     const a = Number(window.prompt("Enter first side of the triangle"));
     //         if (!a) {
     //             console.log("Canceled or incorrect data")
-    //             return;
     //         }
-    //     let b = Number(window.prompt("Enter second side of the triangle"));
+    //     const b = Number(window.prompt("Enter second side of the triangle"));
     //         if (!b) {
     //             console.log("Canceled or incorrect data")
-    //             return;
     //         }
-    //     let c = Number(window.prompt("Enter third side of the triangle"));
+    //     const c = Number(window.prompt("Enter third side of the triangle"));
     //         if (!c) {
     //             console.log("Canceled or incorrect data")
-    //             return;
     //         }
+    // function triangleAreaByThreeSides() {
       
     //     let p = (a + b + c) / 2;
       
@@ -146,9 +143,24 @@ let cities = ["Rome", "Lviv", "Warsaw"];
     //     }
 
     //     let area = Math.sqrt(p * (p - a) * (p - b) * (p - c)).toFixed(3);
-    //     console.log('Triangle area: ' + area);
+
+    //     if (!area) {
+    //         console.log('Incorrect data');
+    //         return;
+    //     } else {
+    //         console.log('Triangle area: ' + area);
+    //     }
     // };
     // triangleAreaByThreeSides();
+
+    // let isRightTriangle;
+    // if (a, b < c || a, c < b || b, c < a && a * a === b * b + c * c || b * b === a * a + c * c || c * c === b * b + a * a) {
+    //     console.log("Right angled triabgle")
+    // } else if (!a, !b, !c) {
+    //     console.log("Not right angled triangle");
+    // } else {
+    //     console.log("Not right angled triangle");
+    // };
 
 /*7. Написати умовну конструкцію, яка в залежності від часу доби виводитиме відповідне привітання.
 Потрібно отримати реальний час доби із системи.
