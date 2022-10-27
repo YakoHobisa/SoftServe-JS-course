@@ -103,7 +103,7 @@ let cities = ["Rome", "Lviv", "Warsaw"];
 Наприклад: при виконанні умови вік більше 18 вивести “Ви досягли повнолітнього віку”.
 Якщо вік менше 18 років вивести “Ви ще надто молоді”, */
 
-    // let isAdult = Number(window.prompt("How old are you?"));
+    // const isAdult = Number(window.prompt("How old are you?"));
 
     // if (isAdult >= 18) {
     //     alert("You have reached the age of majority")
