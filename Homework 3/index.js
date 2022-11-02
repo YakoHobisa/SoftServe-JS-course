@@ -44,12 +44,7 @@ randArray(5);  // [399,310,232,379,40] */
 //     let arr = [];
 // function randArray(k) {
 //     for (let i = 0; i < k; i++) {
-//         let rand = Math.floor(Math.random() * 1000);
-//         if (1 <= rand && rand <= 500) {
-//             arr.push(rand)
-//         } else {
-//             i--;
-//         }
+//         arr.push(Math.floor(Math.random() * 500))
 //     }
 // };
 // randArray(5);
