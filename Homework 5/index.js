@@ -101,60 +101,67 @@ dayRate (ставка за день роботи), workingDays (кількіст
 Посортувати зарплату працівників із найбільшим experience по зростанню і вивести результат в форматі:   worker_fullName: salary_value 
 6) Реалізувати динамічне сортування для будь-кої кількості працівників-екземплярів класу Worker. */
 
-class Worker {
-    constructor(fullName, dayRate, workingDays) {
-        this.fullName = fullName;
-        this.dayRate = dayRate;
-        this.workingDays = workingDays;
-    };
-    showSalary() {
-        let salary = this.dayRate * this.workingDays;
-        return salary;
-    };
-    _experience = 1.2;
-    showSalaryWithExperience() {
-        return this.showSalary() * this._experience;
-    };
-    set workerExp(value) {
-        if (value <= 0) throw new Error("Experience value must be positive");
-        this._experience = value;
-    };
-    get workerExp() {
-        return this._experience;
-    };
-};
+// class Worker {
+//     #experience = 1.2;
+//     constructor(fullName, dayRate, workingDays) {
+//         this.fullName = fullName;
+//         this.dayRate = dayRate;
+//         this.workingDays = workingDays;
+//     };
+//     showSalary() {
+//         return this.dayRate * this.workingDays;
+//     };
+//     showSalaryWithExperience() {
+//         return this.showSalary() * this.#experience;
+//     };
+//     get showExp() {
+//         return this.#experience;
+//     };
+//     set setExp(value) {
+//         this.#experience = value;
+//     };
+// };
 
-let worker1 = new Worker("John Johnson", 20, 23);
-console.log(worker1.fullName);                 
-worker1.showSalary();
-console.log("New experience: " + worker1.showExp);
-worker1.showSalaryWithExperience();
-worker1.setExp = 1.5;
-console.log("New experience: " + worker1.showExp);
-worker1.showSalaryWithExperience();
+// let worker1 = new Worker("John Johnson", 20, 23);
+// worker1.showSalary();
+// console.log(worker1.fullName);
+// console.log(worker1.fullName + ' salary: ' + worker1.showSalary());
+// console.log("New experience: " + worker1.showExp);
+// console.log(worker1.fullName + ' salary: ' + worker1.showSalaryWithExperience());
+// worker1.setExp = 1.5;
+// console.log("New experience: " + worker1.showExp);
+// console.log(worker1.fullName + ' salary: ' + worker1.showSalaryWithExperience());
 
-let worker1 = new Worker("Tom Tomson", 48, 22);
-console.log(worker1.fullName);                 
-worker1.showSalary();
-console.log("New experience: " + worker1.showExp);
-worker1.showSalaryWithExperience();
-worker1.setExp = 1.5;
-console.log("New experience: " + worker1.showExp);
-worker1.showSalaryWithExperience();
+// let worker2 = new Worker("Tom Tomson", 48, 22);
+// worker2.showSalary();
+// console.log(worker2.fullName);
+// console.log(worker2.fullName + ' salary: ' + worker2.showSalary());
+// console.log("New experience: " + worker2.showExp);
+// console.log(worker2.fullName + ' salary: ' + worker2.showSalaryWithExperience());
+// worker2.setExp = 1.5;
+// console.log("New experience: " + worker2.showExp);
+// console.log(worker2.fullName + ' salary: ' + worker2.showSalaryWithExperience());
 
-let worker1 = new Worker("Andy Ander", 29, 23);
-console.log(worker1.fullName);                 
-worker1.showSalary();
-console.log("New experience: " + worker1.showExp);
-worker1.showSalaryWithExperience();
-worker1.setExp = 1.5;
-console.log("New experience: " + worker1.showExp);
-worker1.showSalaryWithExperience();
+// let worker3 = new Worker("Andy Ander", 29, 23);
+// worker3.showSalary();
+// console.log(worker3.fullName);
+// console.log(worker3.fullName + ' salary: ' + worker3.showSalary());
+// console.log("New experience: " + worker3.showExp);
+// console.log(worker3.fullName + ' salary: ' + worker3.showSalaryWithExperience());
+// worker3.setExp = 1.5;
+// console.log("New experience: " + worker3.showExp);
+// console.log(worker3.fullName + ' salary: ' + worker3.showSalaryWithExperience());
 
-let personel = [];
-function sortBySalary(personel) {
-    personel.sort()
-}
+// let personel = [worker1, worker2, worker3];
+// personel.sort((a, b) => a.showSalaryWithExperience() - b.showSalaryWithExperience());
+
+// function showWorkersList(personel) {
+//     console.log('Sorted salary: ');
+//     for (let i = 0; i < personel.length; i++) {
+//         console.log(personel[i].fullName + ': '+ personel[i].showSalaryWithExperience())
+//     }
+// };
+// showWorkersList(personel);
 
 /* Example usage:
 let worker1 = new Worker("John Johnson", 20, 23);
@@ -203,7 +210,8 @@ Tom Tomson: 1584 */
 /* 5. Створіть батьківський клас GeometricFigure, який має порожній метод для визначення площі getArea()
 та метод toString() для виведення назви класу.
 Створіть 3 класи нащадки Triangle, Square і Circle, які наслідуються від класу GeometricFigure.
-Кожен з дочірніх класів має свою реалізацію методу getArea(), для визначення площі фігури. В конструкторах дочірніх класів передбачити властивості необхідні для визначення площі фігури, наприклад для кола - радіус r.
+Кожен з дочірніх класів має свою реалізацію методу getArea(), для визначення площі фігури.
+В конструкторах дочірніх класів передбачити властивості необхідні для визначення площі фігури, наприклад для кола - радіус r.
 Створіть зовнішню функцію handleFigures(figures), яка прийматиме масив об’єктів дочірніх класів figures,
 перевірятиме чи об’єкт належить батьківському класу з урахуванням наслідування,
 виводитиме назву створеного об’єкту відповідної фігури, розраховану площу фігури та сумарну площу всіх фігур.
@@ -222,9 +230,76 @@ toString() {
     	console.log(handleFigures(figures));
 
 Приклад результату:
-	Geometric figure: Triangle - area: 10
+Geometric figure: Triangle - area: 10
 Geometric figure: Square - area: 49
 Geometric figure: Circle - area: 78.53981633974483
 137.53981633974485 // total area */
 
 
+// class GeometricFigure {
+//     getArea() {
+//         return 0;
+//     }
+//     toString() {
+//         return Object.getPrototypeOf(this).constructor.name;
+//     }
+// }
+
+// class Triangle extends GeometricFigure {
+//     constructor(base, height) {
+//         super();
+//         this.base = base;
+//         this.height = height;
+//     }
+//     getArea() {
+//         return this.base * this.height / 2;
+//     }
+// }
+
+// class Square extends GeometricFigure {
+//     constructor(side) {
+//         super();
+//         this.side = side;
+//     }
+
+//     getArea() {
+//         return this.side ** 2;
+//     }
+// }
+
+// class Circle extends GeometricFigure {
+//     constructor(r) {
+//         super();
+//         this.r = r;
+//     }
+//     getArea() {
+//         return Math.PI * this.r ** 2;
+//     }
+// }
+
+// let triangle = new Triangle(4, 5);
+// triangle.getArea();
+
+// let square = new Square(7);
+// square.getArea();
+
+// let circle = new Circle(5);
+// circle.getArea();
+
+// let figures = [triangle, square, circle];
+
+// function handleFigures(figures) {
+//     let figArr = [];
+//     for (let i of figures) {
+//         if (i instanceof GeometricFigure) {
+//             console.log('Geometric figure: ' + i.constructor.name + ' - area: ' + i.getArea());
+//         }
+//         figArr.push(i.getArea());
+//     }
+//     let areaSum = figArr.reduce(function(sum, fig) {
+//         return sum + fig;
+//     }, 0);
+//     console.log(areaSum);
+// };
+
+// handleFigures(figures);
