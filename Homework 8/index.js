@@ -34,7 +34,7 @@ true */
 Для стрінги "cdbBdbsbz" результат ["dbBd", "bB", "d"] */
 
 // function lett(str) {
-//   let lettRegex = /d(b+)(d)/gi;
+//   let lettRegex = /d(b+)(d)/i;
 //   return lettRegex.exec(str);
 // }
 // console.log(lett("cdbBdbsbz"));
@@ -53,7 +53,7 @@ true */
 /* 5. Напишіть функцію, яка виконуватиме валідацію номера банківської карти (9999-9999-9999-9999). */
 
 // function validateCard(cardNum) {
-//   let regex = new RegExp(/\d{4}-?\d{4}-?\d{4}-?\d{4}/);
+//   let regex = new RegExp(/^\d{4}-\d{4}-\d{4}-\d{4}$/);
 //   return regex.test(cardNum);
 // }
 // console.log(validateCard("9999-9999-9999-9999"));
@@ -96,8 +96,8 @@ false
 1, 1, 3 */
 
 // function checkLogin(str) {
-//   let regex = /^(?=^.{2,10}$)[a-zA-Z]+[\w (\d\.\d)]+$/g;
-//   let regexNum = /(\d\.\d)|(\d)/g;
+//   let regex = /^[a-zA-Z]{1}[a-zA-Z0-9\.]{1,9}$/;
+//   let regexNum = /[0-9\.]+/g;
 //   let res = regex.test(str);
 //   let resNum = str.match(regexNum);
 //   return [res, resNum];
