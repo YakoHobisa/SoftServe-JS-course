@@ -31,7 +31,7 @@ let data = {
 
 let {names: [ , name2], ages: [ , age2], names: [ , , , name4], ages: [ , , , age4]} = data;
 /*----or----*/
-let {names: [name1, name2, name3, name4], ages: [age1, age2, age3, age4]} = data;
+// let {names: [name1, name2, name3, name4], ages: [age1, age2, age3, age4]} = data;
 
 console.log(name2); // "Tom"
 console.log(age2); // 24
